@@ -71,6 +71,3 @@ def get_profile():
         return jsonify({'message': 'User not found'}), 404
     
     return jsonify(user.to_dict()), 200
-
-
-from app.models import Quiz, Subject, Chapter, Score
